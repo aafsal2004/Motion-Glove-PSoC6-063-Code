@@ -1,0 +1,6 @@
+C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\Accel.cyprj|1682b46f-60d5-4efc-ac9d-9a95689b0e38
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|48c2d928-bf46-4b90-bab3-d074ca7c0f1a
+C:\Users\amala\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|b63559be-2b37-4979-9d5c-60ec319edd0a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b1688c63-6256-42d8-8dba-f24ca24557c9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|583333e6-0043-4c09-81e6-99d5494a4235
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|90ec3e82-b0c5-4d31-bd39-e76f9ed7490d

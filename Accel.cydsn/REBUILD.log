@@ -1,0 +1,27 @@
+--------------- Rebuild Started: 04/26/2026 16:35:46 Project: main_cm0p.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/include/ip/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/device/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/efuse/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/flash/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/gpio/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ipc/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/lvd/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/profile/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/prot/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/sar/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/scb/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/sysanalog/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/sysclk/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/sysint/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/syslib/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/syspm/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/systick/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/trigmux/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/wdt/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/main_cm0p.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CYBLE_416045_02 -Wall -ffunction-sections -ffat-lto-objects -Og -c main_cm0p.c -o .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o
+main_cm0p.c:18:24: warning: 'bmi270_dev' defined but not used [-Wunused-variable]
+ static struct bmi2_dev bmi270_dev;
+                        ^
+main_cm0p.c:20:16: warning: 'bmi270_i2c_addr' defined but not used [-Wunused-variable]
+ static uint8_t bmi270_i2c_addr = 0x68;
+                ^
+main_cm0p.c:52:14: warning: 'ReadRegister' defined but not used [-Wunused-function]
+ static uint8 ReadRegister(uint8 reg_addr)
+              ^
+main_cm0p.c:73:13: warning: 'BMI270_PrepareConfigLoad' defined but not used [-Wunused-function]
+ static void BMI270_PrepareConfigLoad(void)
+             ^
+main_cm0p.c:106:13: warning: 'BMI270_UploadConfig' defined but not used [-Wunused-function]
+ static void BMI270_UploadConfig(const uint8 *config_file, uint16 config_size)
+             ^
+main_cm0p.c:125:30: warning: 'bmi2_psoc_read' defined but not used [-Wunused-function]
+ static BMI2_INTF_RETURN_TYPE bmi2_psoc_read(uint8_t reg_addr, uint8_t *reg_data, uint32_t len, void *intf_ptr)
+                              ^
+main_cm0p.c:146:30: warning: 'bmi2_psoc_write' defined but not used [-Wunused-function]
+ static BMI2_INTF_RETURN_TYPE bmi2_psoc_write(uint8_t reg_addr, const uint8_t *reg_data, uint32_t len, void *intf_ptr)
+                              ^
+main_cm0p.c:172:13: warning: 'bmi2_psoc_delay_us' defined but not used [-Wunused-function]
+ static void bmi2_psoc_delay_us(uint32_t period, void *intf_ptr)
+             ^
+--------------- Rebuild Succeeded: 04/26/2026 16:35:48 ---------------
