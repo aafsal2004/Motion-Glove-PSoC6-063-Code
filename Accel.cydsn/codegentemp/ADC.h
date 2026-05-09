@@ -141,10 +141,10 @@ The parameters that are set in the customizer are redefined as constants here.
 
 #define ADC_CFG0_SAMPLE_RATE             (100000)
 #define ADC_CFG0_CHANNEL_BASE            (0u)
-#define ADC_CFG0_CHANNEL_COUNT           (2u)
+#define ADC_CFG0_CHANNEL_COUNT           (6u)
 #define ADC_CFG0_VREF_SEL_MASK           (0x70u)
 #define ADC_CFG0_NOMINAL_CLOCK_FREQ      (16666666u)
-#define ADC_CFG0_CHANNEL_EN              (0x3u)
+#define ADC_CFG0_CHANNEL_EN              (0x3fu)
 
 /* Sample Control Register */
 #define ADC_CFG0_SINGLE_ENDED_FORMAT     (1uL)
@@ -323,7 +323,7 @@ The parameters that are set in the customizer are redefined as constants here.
 /** ADC_TOTAL_CHANNELS_NUM
 * This constant represents the number of input channels available for scanning.
 */
-#define ADC_TOTAL_CHANNELS_NUM           (2u)
+#define ADC_TOTAL_CHANNELS_NUM           (6u)
 
 /*******************************************************************************
 *    Variables with External Linkage

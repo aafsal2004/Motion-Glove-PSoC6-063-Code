@@ -307,7 +307,7 @@ int main(void)
     /*
     *   When BMI is not in user
     *   Comment all BMI related code, or entire program wont run
-    */
+    
     bmi270_dev.intf = BMI2_I2C_INTF;
     bmi270_dev.read = bmi2_psoc_read;
     bmi270_dev.write = bmi2_psoc_write;
@@ -363,6 +363,7 @@ int main(void)
     bias /= 50.0f;
     printf("Bias: %.2f dps\r\n", bias);
     
+    */
     Cy_BLE_Start(bluetoothEventHandler);
 
     while (Cy_BLE_GetState() != CY_BLE_STATE_ON)
@@ -382,6 +383,7 @@ int main(void)
             buzzer_flag = 0;
         }
         
+        /*
         rslt = bmi2_get_sensor_data(&sensor_data, &bmi270_dev);
         
         if (rslt == BMI2_OK)
@@ -411,20 +413,38 @@ int main(void)
         }
         
         
-        /*
+        
         *   Variable Resistor Voltage Drop ADC Reading
         *   Potentiometer or Flex Sensor goes to ADC 0
         *   To add more Flex Sensors, utilize more ADC pins for flex Sensors
         */
+        
         Cy_SAR_StartConvert(SAR, CY_SAR_START_CONVERT_SINGLE_SHOT);
         Cy_SAR_IsEndConversion(SAR, CY_SAR_WAIT_FOR_RESULT);
         //Value is a raw 16 bit value
         //Go to line 453 to understand voltage conversion
-        int16_t value = Cy_SAR_GetResult16(SAR, 0);
+        int16_t res_one = Cy_SAR_GetResult16(SAR, 0);
+        int16_t res_two = Cy_SAR_GetResult16(SAR, 1);
+        int16_t res_three = Cy_SAR_GetResult16(SAR, 2);
+        int16_t res_four = Cy_SAR_GetResult16(SAR, 3);
+        int16_t res_five = Cy_SAR_GetResult16(SAR, 4);
+        
+        float volt_one = Cy_SAR_CountsTo_Volts(SAR, 0, res_one);
+        float volt_two = Cy_SAR_CountsTo_Volts(SAR, 1, res_two);
+        float volt_three = Cy_SAR_CountsTo_Volts(SAR, 2, res_three);
+        float volt_four = Cy_SAR_CountsTo_Volts(SAR, 3, res_four);
+        float volt_five = Cy_SAR_CountsTo_Volts(SAR, 4, res_five);
+        
+        printf("Volt_One: %f\n\r", volt_one);
+        printf("Volt_Two: %f\n\r", volt_two);
+        printf("Volt_Three: %f\n\r", volt_three);
+        printf("Volt_Four: %f\n\r", volt_four);
+        printf("Volt_Five: %f\n\r\n", volt_five);
         
         
         //ADC for battery voltage reading
         //Quite straightforward
+        /*
         int16_t batt_val = Cy_SAR_GetResult16(SAR, 1);
         float batt_val_float = Cy_SAR_CountsTo_Volts(SAR, 1, batt_val);
         printf("Battery Voltage: %f\n\r", batt_val_float);
@@ -449,23 +469,25 @@ int main(void)
             //UART_PutString("RED LED ON");
         }
         
+        */
         //Value then gets converted to a voltage float here
-        float volts = Cy_SAR_CountsTo_Volts(SAR, 0, value);
+        //float volts = Cy_SAR_CountsTo_Volts(SAR, 0, value);
+        /*
         if (volts < 0.1) {
             volts = 0.0;
         }
         else if (volts > 3.29) {
             volts = 3.3;
         }
-        
-        printf("CHAR: %c\r\n", gestureChar);
-        printf("Volts: %f\n\r", volts);
+        */
+        //printf("CHAR: %c\r\n", gestureChar);
+        //printf("Volts: %f\n\r", volts);
         
         //Invoke BLE Notification function
         //Pass voltage drop across var resistor and angle
-        sendBLENotification(volts,angle);
+        //sendBLENotification(volts,angle);
         CyDelay(100);
-        printf("CHAR: %c\r\n", gestureChar);
+        //printf("CHAR: %c\r\n", gestureChar);
 
     }
 }

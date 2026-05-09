@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Accel\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\Accel</v>
@@ -411,7 +411,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1066, 455" SelectedTabbedMdiWindow="2f5bbe01-ef06-401c-bb0a-f0f89914bc08"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f5b68405-d568-4b1a-a426-58929ce798fd" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\main_cm0p.c" Guid="2f5bbe01-ef06-401c-bb0a-f0f89914bc08" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\TopDesign\TopDesign.cysch" Guid="02c7f715-9a35-4ee9-8be7-a1f90abd79af" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\Generated_Source\PSoC6\BLE_config.h" Guid="64ee4d12-1dd1-4dc6-8bcd-ad3b540f7cc9" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\Accel.cydwr" Guid="fa311a30-a9a3-49e3-a992-aa598a736681" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\bmi2_defs.h" Guid="7467845e-e6e2-40b8-9dde-750b73fbc96f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="959, 455" SelectedTabbedMdiWindow="02c7f715-9a35-4ee9-8be7-a1f90abd79af"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f5b68405-d568-4b1a-a426-58929ce798fd" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\main_cm0p.c" Guid="2f5bbe01-ef06-401c-bb0a-f0f89914bc08" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\TopDesign\TopDesign.cysch" Guid="02c7f715-9a35-4ee9-8be7-a1f90abd79af" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\Generated_Source\PSoC6\BLE_config.h" Guid="64ee4d12-1dd1-4dc6-8bcd-ad3b540f7cc9" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\Accel.cydwr" Guid="fa311a30-a9a3-49e3-a992-aa598a736681" /><DocumentWindow Key="C:\Users\amala\OneDrive\Desktop\Desktop Folders\Workspace01\Accel.cydsn\bmi2_defs.h" Guid="7467845e-e6e2-40b8-9dde-750b73fbc96f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

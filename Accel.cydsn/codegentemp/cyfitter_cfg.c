@@ -250,8 +250,8 @@ static void AnalogSetDefault(void);
 static void AnalogSetDefault(void)
 {
 	CY_SET_REG32(CYREG_SAR_CTRL, 0x80000000u);
-	CY_SET_REG32(CYREG_SAR_MUX_SWITCH0, 0x00010005u);
-	CY_SET_REG32(CYREG_SAR_MUX_SWITCH_SQ_CTRL, 0x00010005u);
+	CY_SET_REG32(CYREG_SAR_MUX_SWITCH0, 0x0001003Fu);
+	CY_SET_REG32(CYREG_SAR_MUX_SWITCH_SQ_CTRL, 0x0001003Fu);
 	CY_SET_REG32(CYREG_PASS_AREF_AREF_CTRL, 0x80110001u);
 }
 
@@ -399,7 +399,7 @@ void Cy_SystemInit(void)
 	{
 	    const cy_stc_gpio_prt_config_t port10_cfg =
 	    {
-	        .out        = 0x00000005u,
+	        .out        = 0x0000003Fu,
 	        .intrMask   = 0x00000000u,
 	        .intrCfg    = 0x00000000u,
 	        .cfg        = 0x00000000u,
